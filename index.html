@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <form>
+        <label for="fname">Search for:</label>
+        <input type="text" id="searchQuery" name="speciesAndGenus" placeholder="animal...">
+        <input type="submit" value="Search">
+    </form>
+
+    <div class="infowrap">
+        <div class="description mainsplit">
+            <p class="searchQuery">Search results:</p>
+            <div class="textArea"></div>
+        </div>
+
+        <div class="taxonomy mainsplit">
+            <div class="image"><p class="warning">If an image doesn't load here after your search, please change to the second API key on the comments above queryCrunch.googleKey line:13</p></div>
+            <div class="classification">
+                <p class="taxonTitle">Taxonomy ↴</p>
+                <div class="minicontainer">
+                    <p>Class: ↴</p>
+                    <p class="class taxon">......</p>
+                </div>
+                <div class="minicontainer">
+                    <p>Order: ↴</p>
+                    <p class="order taxon">......</p>
+                </div>
+                <div class="minicontainer">
+                    <p>Family: ↴</p>
+                    <p class="family taxon">......</p>
+                </div>
+                <div class="minicontainer">
+                    <p>Genus: ↴</p>
+                    <p class="genus taxon">......</p>
+                </div>
+                <div class="minicontainer">
+                    <p>Species: ↴</p>
+                    <p class="species taxon">......</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--jQuery source-->    
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+
+    <!--JScript source-->
+    <script src="./script.js"></script>
+</body>
+</html>
